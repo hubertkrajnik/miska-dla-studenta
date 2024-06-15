@@ -6,6 +6,12 @@ const Links = [
         duration: 500
     },
     {
+        name: 'Miejsca',
+        to: 'restaurant-list',
+        offset: -273,
+        duration: 500
+    },
+    {
         name: 'Dishes',
         to: 'dishes',
         offset: -350,

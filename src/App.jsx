@@ -7,6 +7,7 @@ import RecipeSlider from './Components/RecipeSlider/RecipeSlider'
 import Contact from './Components/Contact/Contact'
 import ShoppingList from './Components/ShoppingList/ShoppingList'
 import ServicesRestaurant from './Components/ServicesRestaurant/ServicesRestaurant'
+import RestaurantList from './Components/RestaurantList/RestaurantList'
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className='container'>
+        <Title title='Restauracje w Toruniu' subtitle='Polecane miejsca' />
+        <RestaurantList />
+        
         <Title title='Our Dishes' subtitle='Popular Dishes' />
         <Dishes />
 

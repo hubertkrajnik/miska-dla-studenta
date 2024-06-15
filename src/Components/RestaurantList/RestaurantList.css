@@ -1,0 +1,61 @@
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .restaurant {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-basis: 45%;
+  }
+  
+  .restaurant-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .restaurant-description {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .restaurant-address {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #888;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff8383;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #ff6b6b;
+  }
+  
+  @media (max-width: 1000px) {
+    .restaurant {
+      flex-basis: 100%;
+    }
+  
+    .btn {
+      padding: 7px 15px;
+    }
+  }
+  
