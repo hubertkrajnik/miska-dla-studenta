@@ -38,7 +38,7 @@ const Navbar = () => {
         
         <div className='left-section'>
             <img src={Logo} alt='logo' className='logo' />
-            <h2>Culinary</h2>
+            <h2>Miska dla studenta</h2>
         </div>
 
         <div className='right-section'>

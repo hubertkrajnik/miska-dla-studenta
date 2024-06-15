@@ -18,21 +18,21 @@ const TodoInput = ({newTodo, setNewTodo, priority, setPriority, handleAdd}) => {
     <div className='inputs-container'>
     <div className='todo-container'>
         <div className='todo-input-container'>
-          <label>Product</label>
+          <label>Miejsce</label>
           <input type='text' value={newTodo} onChange={handleChange}/>
         </div>
 
         <div className='todo-priority-container'>
-          <label>Priority</label>
+          <label>Priorytet</label>
           <select value={priority} onChange={handlePriority}>
-            <option>Low</option>
-            <option>Medium</option>
-            <option>High</option>
+            <option>Mały</option>
+            <option>Średni</option>
+            <option>Najwyższy</option>
           </select>
         </div>
     </div>
 
-    <button className='add-todo-button' onClick={handleSubmit}>Add Todo</button>
+    <button className='add-todo-button' onClick={handleSubmit}>Dodaj</button>
 </div>
   )
 }

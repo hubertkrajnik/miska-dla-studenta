@@ -20,13 +20,13 @@ const App = () => {
         <Title title='Our recipes' subtitle='Recipes' />
         <RecipeSlider />
 
-        <Title title='Create shopping list' subtitle='Shopping List' />
+        <Title title='Miejsce na Twój wybór' subtitle='Stwórz własną listę miejsc, które chcesz odwiedzić' />
         <ShoppingList />
 
-        <Title title='Our services' subtitle='Services' />
+        <Title title='Czym się kierowaliśmy?' subtitle='Kryteria' />
         <ServicesRestaurant />
 
-        <Title title='Get in touch' subtitle='Contact Us' />
+        <Title title='Pozostańmy w kontakcie' subtitle='Skontaktuj się z nami' />
         <Contact />
       </div>
     </div>

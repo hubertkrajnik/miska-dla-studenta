@@ -4,12 +4,12 @@ const ShoppingHeader = ({showTodoTable, showDoneTable}) => {
   return (
     <div className='table-header-container'>
     <div>
-      <h3>Product List</h3>
+      <h3>Lista miejsc</h3>
     </div>
 
   <div className='table-header-buttons-container'>
-      <button className='table-header-button' onClick={showTodoTable}>View Need</button>
-      <button className='table-header-button' onClick={showDoneTable}>View Bought</button>
+      <button className='table-header-button' onClick={showTodoTable}>Do odwiedzenia</button>
+      <button className='table-header-button' onClick={showDoneTable}>Już odwiedziłeś</button>
     </div>
   </div>
   )

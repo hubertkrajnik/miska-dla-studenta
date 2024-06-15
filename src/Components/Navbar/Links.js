@@ -1,6 +1,6 @@
 const Links = [
     {
-        name: 'Home',
+        name: 'Strona główna',
         to: 'hero',
         offset: 0,
         duration: 500
@@ -18,19 +18,19 @@ const Links = [
         duration: 500
     },
     {
-        name: 'List',
+        name: 'Twoja lista',
         to: 'shopping-list',
         offset: -260,
         duration: 500
     },
     {
-        name: 'Services',
+        name: 'Kryteria',
         to: 'services-restaurant',
         offset: -240,
         duration: 500
     },
     {
-        name: 'Contact',
+        name: 'Kontakt',
         to: 'contact',
         offset: -260,
         duration: 500,

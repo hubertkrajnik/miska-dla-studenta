@@ -10,9 +10,9 @@ const ViewBought = ({doneTodos, handleDeleteDone}) => {
           <thead>
             <tr>
               <th>Id</th>
-              <th>Product</th>
-              <th>Priority</th>
-              <th>Delete</th>
+              <th>Nazwa</th>
+              <th>Priorytet</th>
+              <th>Usuń</th>
             </tr>
           </thead>
           <tbody>

@@ -13,11 +13,11 @@ const ViewNeed = ({todos,handleDelete,handleDone, handleUpdate}) => {
     <thead>
       <tr>
         <th>Id</th>
-        <th>Product</th>
-        <th>Priority</th>
-        <th>Delete</th>
-        <th>Update</th>
-        <th>Done</th>
+        <th>Nazwa</th>
+        <th>Priorytet</th>
+        <th>Usuń</th>
+        <th>Aktualizuj</th>
+        <th>Odwiedziłem</th>
       </tr>
     </thead>
     <tbody>

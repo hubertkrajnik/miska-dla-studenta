@@ -10,24 +10,24 @@ import { AiOutlineCalendar } from "react-icons/ai";
 
 const Content = [
     {
-        title: 'Restaurant',
+        title: 'Restauracje',
         icon: <FaUtensils />,
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt.'
+        content: 'Stosunek cena-jakość jest dla nas najważniejszy. Pragniemy, aby niedrogim kosztem mogli Państwo skosztować coś smacznego co zapełni głód, ale i wypełni kubki smakowe.'
     },
     {
-        title: 'Food Truck',
+        title: 'Gdzie jeszcze?',
         icon: <GiFoodTruck />,
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt'
+        content: 'Czy miejsca, która poznaliście istnieją tylko w Toruniu? Otóż nie do końca! Niektóre z miejsc możecie napotkać na swojej drodze w innych miastach.'
     },
     {
-        title: 'Delivery',
+        title: 'Dostawa',
         icon: <AiOutlineShoppingCart />,
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt'
+        content: 'W czasach ciągłego biegu dobrze jest czasem pozostać w domu i skorzystać z możliwości dostawy, które również są dostępne.'
     },
     {
-        title: 'Reservation',
+        title: 'Rezerwacje',
         icon: <AiOutlineCalendar />,
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut sem fermentum tincidunt'
+        content: 'Możliwość rezerwacji stolika jest zdecydowanie na plus. Dzięki temu klient ma możliwość spokojnego zaplanowania swojego dnia.'
     }
 ]
 

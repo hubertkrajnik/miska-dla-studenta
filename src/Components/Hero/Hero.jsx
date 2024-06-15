@@ -5,9 +5,9 @@ const Hero = () => {
 return (
     <div className='hero container'>
         <div className='hero-text'>
-            <h1>Discover the best dishes</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt varius tellus, vitae congue purus feugiat eget. Suspendisse consequat elementum mauris, venenatis lacinia purus gravida id. Fusce et pharetra erat. Suspendisse potenti. Sed id libero condimentum, volutpat nunc ullamcorper, facilisis magna. Vestibulum gravida nisl sit amet fringilla suscipit. Nunc at.</p>
-            <button className='btn'>Explore</button>
+            <h1>Odkryj studenckie kulinaria w Toruniu!</h1>
+            <p>Dzięki naszej stronie chcemy udostępnić wszystkim propzycje na zjedzenie czegoś smacznego w mieście Toruń. Nasz wyspecjalizowany zespół kierował się najlepszym stosunkiem cena-jakość.</p>
+            <button className='btn'>Odkrywaj</button>
         </div>
     </div>
 )
