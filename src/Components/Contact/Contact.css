@@ -1,0 +1,77 @@
+.contact{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-col{
+    flex-basis: 48%;
+}
+
+.contact-col h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-col p{
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 0;
+    outline: 0; /* remove the border when clicked */
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none; /* remove the resize icon */
+    border-radius: 5px;
+}
+
+
+@media(max-width: 768px){
+    .contact{
+        flex-direction: column;
+        align-items: stretch; /*Dodajemy to, aby elementy rozciągały się na całą szerokość*/
+    }
+
+    .contact-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        max-width: 100%; /* Dostosowujemy szerokość na małych ekranach */
+    }
+
+    .contact-col h3{
+        font-size: 1.3rem; /* Możesz zmniejszyć czcionkę nagłówków dla lepszego dopasowania */
+    }
+
+    .contact-col p{
+        max-width: 100%; /* Dostosowujemy maksymalną szerokość tekstu */
+    }
+
+    .contact-col ul li{
+        align-items: flex-start; /* Ustawiamy, aby elementy wewnątrz listy zaczynały się od lewej strony */
+        margin: 10px 0; /* Możemy zmniejszyć margines między elementami listy */
+    }
+
+    .contact form button{
+        width: 100%; /* Dostosowujemy szerokość przycisku */
+    }
+}
+

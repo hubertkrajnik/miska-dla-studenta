@@ -1,0 +1,147 @@
+.recipe-slider{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.left-arrow-img, .right-arrow-img{
+    position: absolute;
+    top: 50%; /* Center the arrow vertically */
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff8383;
+    cursor: pointer;
+}
+
+.left-arrow-img{
+    left: 0;
+    right: auto;
+}
+
+.slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: none;
+}
+
+
+.active{
+    display: flex;
+}
+
+.slide-left-section{
+    flex-basis: 56%;
+    position: relative;
+}
+
+.slide-left-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.slide-right-section{
+    flex-basis: 40%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-right-section h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.slide-right-section ul{
+    padding: 0;
+}
+
+.slide-right-section ul li{
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+    .recipe-slider{
+        padding: 0 30px;
+    }
+
+    .left-arrow-img, .right-arrow-img{
+        padding: 10px;
+        width: 40px;
+
+    }
+
+    .slide{
+        padding: 10px;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .slide-left-section{
+        flex-basis: 60%;
+    }
+
+    .slide-left-section img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .slide-right-section{
+        flex-basis: 40%;
+        padding: 20px;
+
+    }
+
+    .slide-right-section h3{
+        font-size: 1.2rem;
+    }
+
+    .slide-right-section ul{
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .slide-right-section ul li{
+        font-size: 0.8rem;
+        margin-right: 20px;
+
+    }
+    .slide-right-section h3{
+        font-size: 1.2rem;
+    }
+
+    .slide-right-section ul li{
+        font-size: 0.8rem;
+    }
+
+    .play-icon{
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}

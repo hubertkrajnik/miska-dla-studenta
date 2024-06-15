@@ -1,0 +1,245 @@
+.shopping-list{
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs-header {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.todo-input-container,
+.todo-priority-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-input-container label,
+.todo-priority-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.todo-input-container input {
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid #ff8383;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #ffffff; /* Ciemniejsze tło pola input */
+}
+
+.todo-priority-container select {
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid #ff8383; /* Ciemniejsze obramowanie */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff; /* Ciemniejsze tło select */
+}
+
+.todo-input-container input:focus {
+    outline: none;
+}
+
+.add-todo-button {
+    width: 15rem;
+    height: 2rem;
+    background-color: #ff8383;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #f3f4f6; /* Kolor tekstu */
+}
+
+.add-todo-button:hover {
+    background-color: #ff9b9b;
+}
+
+/* click animation */
+.add-todo-button:active {
+    transform: scale(0.95);
+}
+
+/* Table container */
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.table-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #686868; /* Ciemniejsze tło nagłówka */
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #ff8383;
+}
+
+.table-header-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #f3f4f6; /* Kolor tekstu */
+}
+
+.table-header-buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.table-header-buttons-container button {
+    width: 7rem;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: #f3f4f6; /* Kolor tekstu */
+}
+
+/* efekt na przycisk kiedy najedziemy to linia przesuwa się od lewje do prawej */
+.table-header-buttons-container button::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff8383; /* Kolor linii */
+    transition: width 0.5s ease;
+}
+
+.table-header-buttons-container button:hover::before {
+    width: 100%;
+}
+
+.table-main-section-container {
+    width: 100%;
+    background-color: #aaaaaa; /* Jasniejsze tło */ 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+}
+
+/* Table */
+.table-main-section-container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-main-section-container table thead {
+    background-color: #ff8383; /* Ciemniejsze tło nagłówków */
+    color: #f3f4f6; /* Kolor tekstu */
+}
+
+.table-main-section-container table th,
+.table-main-section-container table td {
+    border: 1px solid #686868;
+    padding: 0.5rem;
+    text-align: center;
+    width: 40%;
+}
+
+.table-main-section-container table th {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.table-main-section-container table td {
+    font-size: 1rem;
+    background-color: #bfbfbf; /* Ciemniejsze tło komórek */
+}
+
+.delete-icon {
+    color: #ff0000; /* Kolor ikony */
+    cursor: pointer;;
+}
+
+.update-icon {
+    color: #0059ff; /* Kolor ikony */
+    cursor: pointer;
+}
+
+.done-icon {
+    color: #00ff00; /* Kolor ikony */
+    cursor: pointer;
+}
+
+/* Responsywność dla tabeli */
+
+@media (max-width: 768px) {
+
+    .inputs-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .todo-input-container input,
+    .todo-priority-container select {
+        width: 100%;
+    }
+
+    .add-todo-button {
+        width: 100%;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .table-header-buttons-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .table-main-section-container{
+        overflow-x: auto;
+    }
+
+    .table-main-section-container table{
+        width: auto;
+    }
+
+    .table-main-section-container table th,
+    .table-main-section-container table td {
+        width: 100%;
+    }
+
+}

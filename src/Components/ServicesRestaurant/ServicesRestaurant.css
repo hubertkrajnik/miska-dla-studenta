@@ -1,0 +1,55 @@
+.services-restaurant{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service-col{
+    flex-basis: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-col h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.service-col p{
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.service-col ul li{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media(max-width: 768px){
+    .services-container{
+        flex-wrap: wrap;
+    }
+
+    .service-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
