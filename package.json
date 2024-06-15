@@ -1,8 +1,8 @@
 {
-  "name": "websitereact",
+  "name": "miskadlastudenta",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mati285.github.io/websitereact/",
+  "homepage": "https://miskadlastudenta.pl/",
   "type": "module",
   "scripts": {
     "dev": "vite",

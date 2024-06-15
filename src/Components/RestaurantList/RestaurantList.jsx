@@ -55,7 +55,7 @@ const RestaurantList = () => {
           <p className='restaurant-description'>{restaurant.description}</p>
           <p className='restaurant-address'><strong>Adres:</strong> {restaurant.address}</p>
           <div className='restaurant-map'>
-            <MapContainer center={restaurant.coordinates} zoom={defaultZoom} scrollWheelZoom={false} style={{ height: '200px', width: '100%' }}>
+            <MapContainer center={restaurant.coordinates} zoom={defaultZoom} scrollWheelZoom={false} style={{ height: '400px', width: '100%' }}>
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

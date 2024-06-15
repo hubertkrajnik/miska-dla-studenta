@@ -1,7 +1,7 @@
 .restaurant-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
     margin-top: 80px; /* Add top margin to push the content below the navbar */
   }
   
@@ -11,7 +11,7 @@
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex-basis: 45%;
+    width: 80%; /* Adjust width to fit within the container */
   }
   
   .restaurant-name {
@@ -65,7 +65,7 @@
   
   @media (max-width: 1000px) {
     .restaurant {
-      flex-basis: 100%;
+      width: 90%; /* Adjust width for smaller screens */
     }
   
     .btn {
