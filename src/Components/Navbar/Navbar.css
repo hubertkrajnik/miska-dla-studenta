@@ -6,10 +6,10 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-    /* background-color: #595959; */
+    z-index: 1000;
     padding: 10px 50px;
-
+    background-color: transparent;
+    transition: background-color 0.5s;
 }
 
 .left-section{
@@ -29,13 +29,7 @@ nav{
     color: #fff;
 }
 
-/* .right-section{
-    display: flex;
-    align-items: center;
-} */
-
 .right-section ul{
-    /* display: inline-block; */
     display: flex;
     align-items: center;
     list-style: none;
@@ -50,7 +44,6 @@ nav{
 .dark-navbar{
     background-color: #595959;
     opacity: 0.9;
-    transition: all 0.5s;
 }
 
 .menu-icon{
@@ -96,7 +89,7 @@ nav{
         right: -100%;
         background: #595959;
         width: 200px;
-        z-index: -1;
+        z-index: 999; /* Adjusted to be under the navbar */
         padding-top: 50px;
         transition: 0.5s;
         height: 100%;
@@ -111,11 +104,9 @@ nav{
     .menu-icon{
         display: block;
         cursor: pointer;
-        z-index: 1;
     }
 
     .active{
         right: 0;
-        z-index: 1;
     }
 }

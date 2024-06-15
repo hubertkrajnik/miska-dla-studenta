@@ -1,0 +1,81 @@
+.restaurant-list {
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 80px; /* Add top margin to push the content below the navbar */
+  }
+  
+  .restaurant {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width to fit within the container */
+  }
+  
+  .restaurant-name {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-description {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .restaurant-address,
+  .restaurant-website {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #888;
+  }
+
+  .restaurant-website a:hover {
+    text-decoration: underline;
+  }
+  
+  .restaurant-map {
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff8383;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #ff6b6b;
+  }
+  
+  @media (max-width: 1000px) {
+    .restaurant {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .btn {
+      padding: 7px 15px;
+    }
+  }
+  

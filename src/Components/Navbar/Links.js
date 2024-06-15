@@ -6,15 +6,9 @@ const Links = [
         duration: 500
     },
     {
-        name: 'Dishes',
-        to: 'dishes',
-        offset: -350,
-        duration: 500
-    },
-    {
-        name: 'Recipe',
-        to: 'recipe-slider',
-        offset: -260,
+        name: 'Miejsca',
+        to: 'restaurant-list',
+        offset: -300,
         duration: 500
     },
     {
