@@ -19,6 +19,13 @@
     color: #333;
   }
   
+  .restaurant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
   .restaurant-description {
     font-size: 1em;
     margin-bottom: 10px;
@@ -29,6 +36,10 @@
     font-size: 0.9em;
     margin-bottom: 15px;
     color: #888;
+  }
+  
+  .restaurant-map {
+    margin-bottom: 15px;
   }
   
   .btn {
