@@ -8,19 +8,7 @@ const Links = [
     {
         name: 'Miejsca',
         to: 'restaurant-list',
-        offset: -273,
-        duration: 500
-    },
-    {
-        name: 'Dishes',
-        to: 'dishes',
-        offset: -350,
-        duration: 500
-    },
-    {
-        name: 'Recipe',
-        to: 'recipe-slider',
-        offset: -260,
+        offset: -300,
         duration: 500
     },
     {

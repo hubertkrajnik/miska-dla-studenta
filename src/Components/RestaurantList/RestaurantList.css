@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 80px; /* Add top margin to push the content below the navbar */
   }
   
   .restaurant {
@@ -40,6 +41,8 @@
   
   .restaurant-map {
     margin-bottom: 15px;
+    position: relative;
+    z-index: 0;
   }
   
   .btn {
