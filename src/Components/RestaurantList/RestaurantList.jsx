@@ -12,6 +12,11 @@ const restaurants = [
   {
     name: 'Royal India',
     description: 'Klimatyczne miejsce serwujące tradycyjne dania kuchni Indyjskiej.',
+    points: [
+      'Tradycyjne dania kuchni Indyjskiej.',
+      'Specjalność: Butter Chicken.',
+      'Przyjazna atmosfera.'
+    ],
     address: 'ul. Prosta 19, 87-100 Toruń',
     website: 'https://www.royalindia.pl/',
     coordinates: [53.0123182, 18.6085413],
@@ -20,6 +25,11 @@ const restaurants = [
   {
     name: 'Manekin',
     description: 'Popularna naleśnikarnia oferująca szeroki wybór naleśników słodkich i wytrawnych.',
+    points: [
+      'Szeroki wybór naleśników.',
+      'Świetne miejsce na rodzinne posiłki.',
+      'Centralna lokalizacja.'
+    ],
     address: 'ul. Rynek Staromiejski 16, 87-100 Toruń',
     website: 'https://manekin.pl/',
     coordinates: [53.0107167, 18.6032653],
@@ -28,6 +38,11 @@ const restaurants = [
   {
     name: 'Pizzeria Piccolo',
     description: 'Mała pizzeria z najlepszymi włoskimi pizzami w mieście.',
+    points: [
+      'Autentyczne włoskie pizze.',
+      'Przytulna atmosfera.',
+      'Świeże składniki.'
+    ],
     address: 'ul. Prosta 20, 87-100 Toruń',
     website: 'https://piccolo.net.pl/',
     coordinates: [53.0126784, 18.6081288],
@@ -36,6 +51,11 @@ const restaurants = [
   {
     name: 'Piekarnia Bartkowscy',
     description: 'Piekarnia oferująca kanapki z różnorakim mięsem oraz świeżymi warzywami.',
+    points: [
+      'Świeże pieczywo.',
+      'Pyszne kanapki.',
+      'Miła obsługa.'
+    ],
     address: 'ul. Różana 1, 87-100 Toruń',
     website: 'http://www.piekarniabartkowscy.pl/',
     coordinates: [53.0097995, 18.6027955],
@@ -44,6 +64,11 @@ const restaurants = [
   {
     name: 'Restauracja Lotos',
     description: 'Miejsce z kuchnią chińską, oferujące niepowtarzalne dania inspirowane Azją.',
+    points: [
+      'Autentyczna kuchnia chińska.',
+      'Wyjątkowe smaki.',
+      'Przyjemna atmosfera.'
+    ],
     address: 'ul. Strumykowa 16, 87-100 Toruń',
     website: 'https://lotos-torun.pl/',
     coordinates: [53.0115300, 18.6074495],
@@ -62,10 +87,15 @@ const RestaurantList = () => {
           <h3 className='restaurant-name'>{restaurant.name}</h3>
           <img src={restaurant.imageUrl} alt={restaurant.name} className='restaurant-image' />
           <p className='restaurant-description'>{restaurant.description}</p>
+          <ul className='restaurant-points'>
+            {restaurant.points.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
           <p className='restaurant-address'><strong>Adres:</strong> {restaurant.address}</p>
           <p className='restaurant-website'><strong>Strona internetowa:</strong> <a href={restaurant.website} target='_blank' rel='noopener noreferrer'>{restaurant.website}</a></p>
           <div className='restaurant-map'>
-            <MapContainer center={restaurant.coordinates} zoom={defaultZoom} scrollWheelZoom={false} style={{ height: '400px', width: '100%' }}>
+            <MapContainer center={restaurant.coordinates} zoom={defaultZoom} scrollWheelZoom={true} style={{ height: '400px', width: '100%' }}>
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

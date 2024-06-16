@@ -17,13 +17,13 @@ const ShoppingList = () => {
     const handleAdd = (newTodo, priority) => {
   
       if(newTodo === ''){
-        alert('Please enter a todo')
+        alert('Proszę wpisać nazwę!')
         return
       }
   
       if(state.find(todo => todo.name === newTodo))
       {
-        alert('Todo already exists')
+        alert('Taka nazwa juz istnieje!')
         return
       }
   
@@ -43,15 +43,15 @@ const ShoppingList = () => {
     }
   
     const handleUpdate = (id) => {
-      const newTodo = prompt('Enter new todo')
+      const newTodo = prompt('Wpisz nową nazwę!')
   
       if(!newTodo){
-        alert('Todo cannot be empty')
+        alert('Nazwa nie może być pusta!')
         return
       }
   
       if(state.find(todo => todo.name === newTodo)){
-        alert('Todo already exists')
+        alert('Ta nazwa już istnieje!')
         return
       }
   
