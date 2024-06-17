@@ -1,5 +1,6 @@
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { Icon } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './RestaurantList.css'
 import Manekin from '../../assets/images/Manekin.jpg'
@@ -7,6 +8,7 @@ import Piccolo from '../../assets/images/Piccolo.jpg'
 import RoyalIndia from '../../assets/images/RoyalIndia.jpg'
 import Bartkowscy from '../../assets/images/Bartkowscy.jpg'
 import Lotos from '../../assets/images/Lotos.jpg'
+import marker from '../../assets/images/marker.png'
 
 const restaurants = [
   {
@@ -115,7 +117,7 @@ const RestaurantList = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
-              <Marker position={restaurant.coordinates}>
+              <Marker position={restaurant.coordinates} icon={new Icon({iconUrl: marker, iconSize: [32, 32] })} > 
                 <Popup>{restaurant.name}</Popup>
               </Marker>
             </MapContainer>
