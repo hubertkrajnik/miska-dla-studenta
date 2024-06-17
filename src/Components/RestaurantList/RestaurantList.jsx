@@ -11,11 +11,14 @@ import Lotos from '../../assets/images/Lotos.jpg'
 const restaurants = [
   {
     name: 'Royal India',
-    description: 'Klimatyczne miejsce serwujące tradycyjne dania kuchni Indyjskiej.',
+    description: 'Nasz zdecydowany faworyt. Klimatyczne miejsce serwujące tradycyjne dania kuchni Indyjskiej. Najciekawszą propozycją jest lunch serwowany codziennie od poniedziałku do piątku, dodatkowo wraz z aplikacją SKRM można uzyskać 15% zniżki. Byliśmy w tym miejscu niejednokrotnie i za każdym razem zachwycało tak samo. Obowiązkowa pozycja dla każdego kto chce się najeść, ale i spróbować czegoś nietypowego. Specjalność: tikka masala.',
     points: [
-      'Tradycyjne dania kuchni Indyjskiej.',
-      'Specjalność: Butter Chicken.',
-      'Przyjazna atmosfera.'
+      'Jakość jedzenia 10/10',
+      'Cena 8/10',
+      'Klimat miejsca 10/10',
+      'Obsługa 8/10',
+      'Lokalizacja 8/10',
+      'Ogólna ocena 10/10'
     ],
     address: 'ul. Prosta 19, 87-100 Toruń',
     website: 'https://www.royalindia.pl/',
@@ -24,11 +27,14 @@ const restaurants = [
   },
   {
     name: 'Manekin',
-    description: 'Popularna naleśnikarnia oferująca szeroki wybór naleśników słodkich i wytrawnych.',
+    description: 'Popularna naleśnikarnia oferująca szeroki wybór naleśników słodkich i wytrawnych. Świetne miejsce również na rodzinne posiłki. Jest ona także popularna w innych większych miastach w Polsce. Każdego dnia dobrym wyborem może być naleśnik, a jest ich na tyle dużo w ofercie, iż każdy znajdzie coś dla siebie. Oprócz tego serwowane są makarony, które również zachwycają jakością.',
     points: [
-      'Szeroki wybór naleśników.',
-      'Świetne miejsce na rodzinne posiłki.',
-      'Centralna lokalizacja.'
+      'Jakość jedzenia 9/10',
+      'Cena 8/10',
+      'Klimat miejsca 7/10',
+      'Obsługa 9/10',
+      'Lokalizacja 10/10',
+      'Ogólna ocena 9/10'
     ],
     address: 'ul. Rynek Staromiejski 16, 87-100 Toruń',
     website: 'https://manekin.pl/',
@@ -37,11 +43,14 @@ const restaurants = [
   },
   {
     name: 'Pizzeria Piccolo',
-    description: 'Mała pizzeria z najlepszymi włoskimi pizzami w mieście.',
+    description: 'Mała pizzeria z najlepszymi włoskimi pizzami w mieście. Kultowe już miejsce od lat na mapie Torunia. Barszcz, pizza, a na deser brownie sprawiają, że w bardzo dobrej cenie jesteśmy się w stanie najeść do syta. To jest jedno z miejsc, do którego po prostu trzeba przyjść.',
     points: [
-      'Autentyczne włoskie pizze.',
-      'Przytulna atmosfera.',
-      'Świeże składniki.'
+      'Jakość jedzenia 9/10',
+      'Cena 10/10',
+      'Klimat miejsca 10/10',
+      'Obsługa 7/10',
+      'Lokalizacja 9/10',
+      'Ogólna ocena 10/10'
     ],
     address: 'ul. Prosta 20, 87-100 Toruń',
     website: 'https://piccolo.net.pl/',
@@ -50,11 +59,14 @@ const restaurants = [
   },
   {
     name: 'Piekarnia Bartkowscy',
-    description: 'Piekarnia oferująca kanapki z różnorakim mięsem oraz świeżymi warzywami.',
+    description: 'Nieoczywiste miejsce w naszym zestawieniu. Piekarnia oferująca kanapki z różnorakim mięsem oraz świeżymi warzywami. Oferta jest bardzo szeroka, a w tym bardzo dobrze wypada cenowo. Jest to zdecydowanie świetna pozycja dla tych, którzy cenią sobie jakość dodawanych składników.',
     points: [
-      'Świeże pieczywo.',
-      'Pyszne kanapki.',
-      'Miła obsługa.'
+      'Jakość jedzenia 10/10',
+      'Cena 10/10',
+      'Klimat miejsca 7/10',
+      'Obsługa 8/10',
+      'Lokalizacja 10/10',
+      'Ogólna ocena 9/10'
     ],
     address: 'ul. Różana 1, 87-100 Toruń',
     website: 'http://www.piekarniabartkowscy.pl/',
@@ -63,11 +75,14 @@ const restaurants = [
   },
   {
     name: 'Restauracja Lotos',
-    description: 'Miejsce z kuchnią chińską, oferujące niepowtarzalne dania inspirowane Azją.',
+    description: 'Miejsce z kuchnią chińską, oferujące dania inspirowane Azją. Duże porcje w dobrej cenie, to właśnie cechuje to miejsce. Szeroki wachlarz dań powoduje, że zawsze można znaleźć to na co mamy ochotę.',
     points: [
-      'Autentyczna kuchnia chińska.',
-      'Wyjątkowe smaki.',
-      'Przyjemna atmosfera.'
+      'Jakość jedzenia 7/10',
+      'Cena 9/10',
+      'Klimat miejsca 8/10',
+      'Obsługa 6/10',
+      'Lokalizacja 8/10',
+      'Ogólna ocena 7/10'
     ],
     address: 'ul. Strumykowa 16, 87-100 Toruń',
     website: 'https://lotos-torun.pl/',

@@ -17,14 +17,15 @@ const Contact = () => {
         <div className='contact-col'>
             <h3>Wyślij wiadomość <FaEnvelope /></h3>
             <p>
-                W celu zapewnienia jak najlepszej jakości pragniemy zaprosić Cię do kontaktu z nami. Chcemy aby nasza strona była jak najlepsza dla jej użytkowników. Cenimy sobie zdanie klientów oraz wszelkie uwagi. Stwórzmy to razem!
+                W celu zapewnienia jak najlepszej jakości pragniemy zaprosić Cię do kontaktu z nami. Chcemy, aby nasza strona była jak najlepsza dla jej użytkowników. Cenimy sobie zdanie klientów oraz wszelkie uwagi. Stwórzmy to razem!
             </p>
 
             <ul>
                 <li><FaPhone/> Numer kontaktowy: 575-781-956</li>
                 <li><FaMailBulk/> Email: 313107@stud.umk.pl</li>
-                <li><FaMailBulk/> Email: 313112@stud.umk.pl</li>
-                <li><FaMapMarkerAlt/> Adres: Końcowa 4, Toruń</li>
+                <li><FaMailBulk/> Email: 313012@stud.umk.pl</li>
+                <li><FaMailBulk/> Email: 313018@stud.umk.pl</li>
+                <li><FaMapMarkerAlt/> Adres: Fryderyka Chopina 12/18, 87-100 Toruń</li>
             </ul>
         </div>
 

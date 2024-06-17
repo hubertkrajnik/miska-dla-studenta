@@ -14,7 +14,7 @@ const App = () => {
       <div className='main-container'>
         <Hero />
         <div className='container'>
-          <Title title='Restauracje w Toruniu' subtitle='Odkryj najlepsze miejsca do jedzenia w Toruniu' />
+          <Title title='Restauracje w Toruniu na każdą kieszeń' subtitle='Odkryj najlepsze miejsca do jedzenia w Toruniu' />
           <RestaurantList />
           
           <Title title='Miejsce na Twój wybór' subtitle='Stwórz własną listę miejsc, które chcesz odwiedzić' />

@@ -10,9 +10,9 @@ import { AiOutlineCalendar } from "react-icons/ai";
 
 const Content = [
     {
-        title: 'Restauracje',
+        title: 'Cena, a jakość',
         icon: <FaUtensils />,
-        content: 'Stosunek cena-jakość jest dla nas najważniejszy. Pragniemy, aby niedrogim kosztem mogli Państwo skosztować coś smacznego co zapełni głód, ale i wypełni kubki smakowe.'
+        content: 'Stosunek cena-jakość jest dla nas najważniejszy. Pragniemy, aby niedrogim kosztem można było skosztować coś smacznego co zapełni głód, ale i wypełni kubki smakowe.'
     },
     {
         title: 'Gdzie jeszcze?',
@@ -20,9 +20,9 @@ const Content = [
         content: 'Czy miejsca, która poznaliście istnieją tylko w Toruniu? Otóż nie do końca! Niektóre z miejsc możecie napotkać na swojej drodze w innych miastach.'
     },
     {
-        title: 'Dostawa',
+        title: 'Obsługa',
         icon: <AiOutlineShoppingCart />,
-        content: 'W czasach ciągłego biegu dobrze jest czasem pozostać w domu i skorzystać z możliwości dostawy, które również są dostępne.'
+        content: 'Wzajemna życzliwość potrafi zawsze umilić nastrój. Dobrze jest czuć się w danym miejscu komfortowo i mile widzianym.'
     },
     {
         title: 'Rezerwacje',
